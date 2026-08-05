@@ -118,12 +118,12 @@ export default function Loader() {
       </div>
 
       <motion.p
-        key={status}
+        key={status ?? "loader-status"}
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         className="mt-5 font-mono text-xs tracking-[0.3em] text-slate-500"
       >
-        {status.toUpperCase()}
+        {(status ?? "").toUpperCase()}
       </motion.p>
 
       <div className="absolute bottom-8 left-8 hidden font-mono text-[10px] tracking-[0.25em] text-slate-600 md:block">
