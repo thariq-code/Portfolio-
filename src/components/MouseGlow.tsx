@@ -18,9 +18,11 @@ export default function MouseGlow() {
       tx = e.clientX;
       ty = e.clientY;
     };
+    el.style.willChange = "transform";
+
     const loop = () => {
-      x += (tx - x) * 0.09;
-      y += (ty - y) * 0.09;
+      x += (tx - x) * 0.08;
+      y += (ty - y) * 0.08;
       el.style.transform = `translate3d(${x - 320}px, ${y - 320}px, 0)`;
       raf = requestAnimationFrame(loop);
     };

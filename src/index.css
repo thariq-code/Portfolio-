@@ -11,18 +11,18 @@
   --color-pulse: #8b5cf6;
   --color-aqua: #22d3ee;
 
-  --animate-float: float 7s ease-in-out infinite;
-  --animate-float-slow: float 11s ease-in-out infinite;
-  --animate-marquee: marquee 38s linear infinite;
-  --animate-marquee-rev: marquee-rev 46s linear infinite;
-  --animate-spin-slow: spin360 18s linear infinite;
-  --animate-spin-slower: spin360 30s linear infinite;
-  --animate-orbit: orbit 10s linear infinite;
-  --animate-orbit-rev: orbit-rev 14s linear infinite;
-  --animate-shimmer: shimmer 4s linear infinite;
-  --animate-scanline: scanline 6s linear infinite;
-  --animate-blink: blink 1.1s step-end infinite;
-  --animate-pulse-ring: pulse-ring 2.8s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  --animate-float: float 8s ease-in-out infinite;
+  --animate-float-slow: float 12s ease-in-out infinite;
+  --animate-marquee: marquee 44s linear infinite;
+  --animate-marquee-rev: marquee-rev 50s linear infinite;
+  --animate-spin-slow: spin360 22s linear infinite;
+  --animate-spin-slower: spin360 34s linear infinite;
+  --animate-orbit: orbit 12s linear infinite;
+  --animate-orbit-rev: orbit-rev 16s linear infinite;
+  --animate-shimmer: shimmer 5.5s linear infinite;
+  --animate-scanline: scanline 9s linear infinite;
+  --animate-blink: blink 1.2s step-end infinite;
+  --animate-pulse-ring: pulse-ring 3.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
 
   @keyframes float {
     0%,

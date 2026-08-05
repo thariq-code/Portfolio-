@@ -43,7 +43,8 @@ function NeuralOrb() {
       {/* floating chips */}
       <motion.div
         animate={{ y: [0, -10, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 5.6, repeat: Infinity, ease: "easeInOut" }}
+        style={{ willChange: "transform" }}
         className="glass-strong absolute -left-2 top-[14%] rounded-2xl px-4 py-3 text-left shadow-xl md:-left-8"
       >
         <p className="font-display text-2xl font-bold text-white">85%</p>
@@ -53,7 +54,8 @@ function NeuralOrb() {
       </motion.div>
       <motion.div
         animate={{ y: [0, 12, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+        transition={{ duration: 6.4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+        style={{ willChange: "transform" }}
         className="glass-strong absolute -right-2 top-[44%] rounded-2xl px-4 py-3 text-left shadow-xl md:-right-10"
       >
         <p className="font-display text-sm font-semibold text-white">GUVI × HCL</p>
@@ -63,7 +65,8 @@ function NeuralOrb() {
       </motion.div>
       <motion.div
         animate={{ y: [0, -8, 0] }}
-        transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1.1 }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.1 }}
+        style={{ willChange: "transform" }}
         className="glass-strong absolute bottom-[12%] left-1/2 -translate-x-1/2 rounded-2xl px-4 py-3 text-left shadow-xl"
       >
         <p className="font-display text-sm font-semibold text-white">9+ Projects</p>

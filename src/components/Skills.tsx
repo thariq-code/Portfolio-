@@ -61,7 +61,8 @@ export default function Skills() {
               initial={{ opacity: 0, scale: 0.85, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.85, y: -10 }}
-              transition={{ duration: 0.5, delay: i * 0.03, ease: EASE }}
+              transition={{ duration: 0.55, delay: i * 0.03, ease: EASE }}
+              style={{ willChange: "opacity, transform" }}
               className="card-glow group relative overflow-hidden rounded-2xl glass p-5 transition-transform duration-500 hover:-translate-y-2"
             >
               {/* hover sheen */}

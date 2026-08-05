@@ -12,8 +12,8 @@ function TiltPanel({ project, index }: { project: (typeof projects)[number]; ind
   const ref = useRef<HTMLDivElement>(null);
   const mx = useMotionValue(0.5);
   const my = useMotionValue(0.5);
-  const rx = useSpring(useTransform(my, [0, 1], [9, -9]), { stiffness: 180, damping: 20 });
-  const ry = useSpring(useTransform(mx, [0, 1], [-9, 9]), { stiffness: 180, damping: 20 });
+  const rx = useSpring(useTransform(my, [0, 1], [9, -9]), { stiffness: 140, damping: 28 });
+  const ry = useSpring(useTransform(mx, [0, 1], [-9, 9]), { stiffness: 140, damping: 28 });
 
   const onMove = (e: React.MouseEvent) => {
     const rect = ref.current?.getBoundingClientRect();
@@ -31,7 +31,12 @@ function TiltPanel({ project, index }: { project: (typeof projects)[number]; ind
           mx.set(0.5);
           my.set(0.5);
         }}
-        style={{ rotateX: rx, rotateY: ry, transformStyle: "preserve-3d" }}
+        style={{
+          rotateX: rx,
+          rotateY: ry,
+          transformStyle: "preserve-3d",
+          willChange: "transform",
+        }}
         className="relative h-full min-h-[260px] overflow-hidden rounded-3xl"
       >
       {/* gradient base */}

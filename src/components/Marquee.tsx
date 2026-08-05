@@ -7,6 +7,7 @@ function Row({ reverse = false }: { reverse?: boolean }) {
       className={`flex w-max items-center gap-10 whitespace-nowrap ${
         reverse ? "animate-marquee-rev" : "animate-marquee"
       }`}
+      style={{ willChange: "transform" }}
     >
       {items.map((item, i) => (
         <span key={i} className="flex items-center gap-10">

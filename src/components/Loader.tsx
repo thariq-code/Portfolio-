@@ -34,6 +34,7 @@ export default function Loader() {
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#04060f]"
       exit={{ opacity: 0, scale: 1.06, filter: "blur(10px)" }}
       transition={{ duration: 0.8, ease: EASE }}
+      style={{ willChange: "opacity, transform" }}
     >
       {/* ambient glow */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(79,124,255,0.16),rgba(139,92,246,0.08)_45%,transparent_70%)]" />

@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import {
   ArrowDown,
   ArrowRight,
@@ -31,6 +31,10 @@ export default function Hero() {
   const contentY = useTransform(scrollYProgress, [0, 1], [0, 140]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.75], [1, 0]);
   const glowY = useTransform(scrollYProgress, [0, 1], [0, -120]);
+  const springConfig = { stiffness: 90, damping: 28, mass: 0.35 };
+  const contentYSmooth = useSpring(contentY, springConfig);
+  const contentOpacitySmooth = useSpring(contentOpacity, springConfig);
+  const glowYSmooth = useSpring(glowY, springConfig);
 
   return (
     <section
@@ -39,7 +43,7 @@ export default function Hero() {
       className="relative flex min-h-[100svh] items-center justify-center overflow-hidden pt-28 pb-20"
     >
       {/* cinematic light beams */}
-      <motion.div style={{ y: glowY }} className="pointer-events-none absolute inset-0">
+      <motion.div style={{ y: glowYSmooth }} className="pointer-events-none absolute inset-0">
         <div className="absolute -left-32 top-1/4 h-[560px] w-[420px] -rotate-[24deg] bg-gradient-to-b from-blue-600/25 via-blue-500/8 to-transparent blur-3xl" />
         <div className="absolute -right-24 top-1/3 h-[520px] w-[380px] rotate-[20deg] bg-gradient-to-b from-violet-600/22 via-violet-500/8 to-transparent blur-3xl" />
         <div className="absolute bottom-0 left-1/2 h-[420px] w-[700px] -translate-x-1/2 rounded-[100%] bg-cyan-500/10 blur-[120px]" />
@@ -48,8 +52,9 @@ export default function Hero() {
       </motion.div>
 
       <motion.div
-        style={{ y: contentY, opacity: contentOpacity }}
+        style={{ y: contentYSmooth, opacity: contentOpacitySmooth }}
         className="relative z-10 mx-auto w-full max-w-6xl px-6 text-center"
+        transition={{ ease: EASE, duration: 0.8 }}
       >
         {/* status badge */}
         <motion.div
