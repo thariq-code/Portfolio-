@@ -14,6 +14,7 @@ export type Project = {
   tech: string[];
   grad: [string, string];
   icon: string;
+  repoUrl: string;
 };
 
 export type Certification = {
@@ -98,6 +99,7 @@ export const projects: Project[] = [
     tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "ML Pipelines"],
     grad: ["#4f7cff", "#8b5cf6"],
     icon: "shield",
+    repoUrl: "https://github.com/thariq-code/ADVANCED-MACHINE-LEARNING-TECHNIQUES-FOR-ACCURATE-DETECTION-OF-FRADULENT-BANK-TRANSACTIONS",
   },
   {
     id: "deepfake-detection",
@@ -109,6 +111,7 @@ export const projects: Project[] = [
     tech: ["Deep Learning", "CNN", "LSTM", "OpenCV", "Python"],
     grad: ["#8b5cf6", "#ec4899"],
     icon: "scan-face",
+    repoUrl: "https://github.com/thariq-code/ai_adaptive_deepfake_detection",
   },
   {
     id: "burnout-detection",
@@ -120,6 +123,7 @@ export const projects: Project[] = [
     tech: ["Python", "ML", "NLP", "Pandas", "Feature Engineering"],
     grad: ["#22d3ee", "#4f7cff"],
     icon: "heart-pulse",
+    repoUrl: "https://github.com/thariq-code/Burnout-Detection",
   },
   {
     id: "cardekho-price",
@@ -131,6 +135,7 @@ export const projects: Project[] = [
     tech: ["Python", "Scikit-learn", "Pandas", "Regression"],
     grad: ["#0ea5e9", "#22d3ee"],
     icon: "car",
+    repoUrl: "https://github.com/thariq-code/Cardeko-Car-Price-Prediction-Model",
   },
   {
     id: "gpay-expense",
@@ -142,6 +147,7 @@ export const projects: Project[] = [
     tech: ["Flask", "HTML", "CSS", "JavaScript", "SQL"],
     grad: ["#22d3ee", "#8b5cf6"],
     icon: "wallet",
+    repoUrl: "https://github.com/thariq-code/googlepay-expense-sharing",
   },
   {
     id: "tesla-stock",
@@ -153,6 +159,7 @@ export const projects: Project[] = [
     tech: ["Python", "TensorFlow", "LSTM", "Pandas"],
     grad: ["#6366f1", "#4f7cff"],
     icon: "line-chart",
+    repoUrl: "https://github.com/thariq-code/tesla-stock-price-prediction-with-lstm",
   },
   {
     id: "facial-recognition",
@@ -164,6 +171,7 @@ export const projects: Project[] = [
     tech: ["Deep Learning", "CNN", "OpenCV", "Python"],
     grad: ["#a855f7", "#6366f1"],
     icon: "user-check",
+    repoUrl: "https://github.com/thariq-code/Face-Recognition-System-Using-LFW-Dataset",
   },
   {
     id: "sql-bookstore",
@@ -175,6 +183,7 @@ export const projects: Project[] = [
     tech: ["SQL", "MySQL", "Database Design"],
     grad: ["#38bdf8", "#0ea5e9"],
     icon: "library",
+    repoUrl: "https://github.com/thariq-code/SQL-Bookstore-Database",
   },
   {
     id: "autopilot-clone",
@@ -186,6 +195,7 @@ export const projects: Project[] = [
     tech: ["Computer Vision", "OpenCV", "YOLO", "Deep Learning"],
     grad: ["#4f7cff", "#22d3ee"],
     icon: "radar",
+    repoUrl: "https://github.com/thariq-code/Tesla-Autopilot-Clone-Object-Detection",
   },
 ];
 

@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { ArrowUpRight, Layers, Terminal } from "lucide-react";
 import { useRef } from "react";
-import { profile, projects } from "../data/profile";
+import { projects } from "../data/profile";
 import { cn } from "../utils/cn";
 import { GithubIcon } from "./BrandIcons";
 import Chapter from "./Chapter";
@@ -177,7 +177,7 @@ export default function Projects() {
 
                 <div className="mt-7 flex items-center gap-6">
                   <a
-                    href={profile.github}
+                    href={project.repoUrl}
                     target="_blank"
                     rel="noreferrer"
                     className="group/link flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-slate-400 transition-colors hover:text-white"
@@ -186,7 +186,7 @@ export default function Projects() {
                     Source
                   </a>
                   <a
-                    href={profile.github}
+                    href={project.repoUrl}
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-300 transition-all duration-300 hover:gap-3"
